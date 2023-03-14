@@ -5,7 +5,6 @@ import java.time.temporal.ChronoUnit;
 
 public class People {
     private final String[] NSPAndBorn;
-    private String sex = null;
 
     public People(String str){
         NSPAndBorn = str.split(" ");

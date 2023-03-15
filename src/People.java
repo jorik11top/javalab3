@@ -1,39 +1,61 @@
+import java.io.IOException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeParseException;
 import java.time.temporal.ChronoUnit;
 
 
 public class People {
-    private final String[] NSPAndBorn;
+    private String name;
+    private String surname;
+    private String patronymic;
+    private String born;
 
-    public People(String str){
-        NSPAndBorn = str.split(" ");
+
+    public People(String str)throws IOException {
+        String[] NSPAndBorn = str.split(" ");
+        try {
+            if(NSPAndBorn.length != 4){
+                throw new IOException();
+            }
+            else{
+                surname = NSPAndBorn[0];
+                name = NSPAndBorn[1];
+                patronymic = NSPAndBorn[2];
+                born = NSPAndBorn[3];
+            }
+        }catch (IOException e){
+            System.out.println("Incorrect format of the entered data");
+        }
+
     }
 
-    public String getFullNameAndBorn(){
-        return String.join(" ",NSPAndBorn);
-    }
 
     public String getSurname(){
-        return NSPAndBorn[0];
+        return this.surname;
     }
 
-    public String getName(){
-        return NSPAndBorn[1];
+    public String getName() {
+        return this.name;
     }
 
     public String getPatronymic(){
-        return NSPAndBorn[2];
+        return this.patronymic;
     }
 
     public String getBornAge(){
-        return NSPAndBorn[3];
+        return this.born;
     }
 
-    public int getAge(){
-        LocalDate born = LocalDate.parse(NSPAndBorn[3], DateTimeFormatter.ofPattern("dd.MM.yyyy"));
-        LocalDate today = LocalDate.now();
-        return (int) ChronoUnit.YEARS.between(born,today);
+    public int getAge() throws DateTimeParseException {
+        try {
+            LocalDate born = LocalDate.parse(getBornAge(), DateTimeFormatter.ofPattern("dd.MM.yyyy"));
+            LocalDate today = LocalDate.now();
+            return (int) ChronoUnit.YEARS.between(born, today);
+        }catch (DateTimeParseException e){
+           System.out.println("The date of birth format is incorrect");
+           return -1;
+        }
     }
 
     public String getSex(){
@@ -60,8 +82,14 @@ public class People {
 
     }
 
-    public String getUserInfoFormat(){
-        return getSurname()+" "+getName().charAt(0)+"."+getPatronymic().charAt(0)+". пол:"+getSex()+" возраст:"+formatYear(getAge());
+    public String getUserInfoFormat() throws NullPointerException{
+        try {
+            return getSurname()+" "+getName().charAt(0)+"."+getPatronymic().charAt(0)+". пол:"+getSex()+" возраст:"+formatYear(getAge());
+        }
+        catch (NullPointerException e){
+            System.out.println("Object was created incorrectly");
+            return null;
+        }
     }
 
 

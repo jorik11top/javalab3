@@ -11,7 +11,10 @@ public class People {
     private String patronymic;
     private String born;
 
-
+    /**Конструктор
+     * @param str - Строка Формата <p>"Фамилия Имя Отчество дд.мм.гггг"<p/>
+     * @throws  {@link IOException}
+    */
     public People(String str)throws IOException {
         String[] NSPAndBorn = str.split(" ");
         try {
@@ -47,6 +50,11 @@ public class People {
         return this.born;
     }
 
+    /**
+     *
+     * @return Число int(Кол-во полных лет) или -1 в случае неправильного формата введённых данных
+     * @throws DateTimeParseException
+     */
     public int getAge() throws DateTimeParseException {
         try {
             LocalDate born = LocalDate.parse(getBornAge(), DateTimeFormatter.ofPattern("dd.MM.yyyy"));
@@ -57,7 +65,9 @@ public class People {
            return -1;
         }
     }
-
+    /**
+     * @return {@link String} пол человек "Мужчина" или "Женщина"
+     */
     public String getSex(){
         String word = getPatronymic().substring(getPatronymic().length()-1);
         if (word.equals("ч")){
@@ -68,6 +78,10 @@ public class People {
         }
     }
 
+    /**
+     * Приватная функция для правильно вывода возраста
+     * @param age кол-лет
+     */
     private String formatYear(int age){
         if (age>4 & age < 21){
             return getAge() + " лет";
@@ -82,6 +96,11 @@ public class People {
 
     }
 
+    /**
+     * Основная функция
+     * @return {@link  String} формата "Фамилия И.О. пол:() возраст:() лет/год/года "
+     * @throws NullPointerException
+     */
     public String getUserInfoFormat() throws NullPointerException{
         try {
             return getSurname()+" "+getName().charAt(0)+"."+getPatronymic().charAt(0)+". пол:"+getSex()+" возраст:"+formatYear(getAge());

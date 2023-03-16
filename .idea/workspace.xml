@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5a7b032-6a25-4834-9690-f131f0e927d3" name="Changes" comment="version_03_finally">
+    <list default="true" id="f5a7b032-6a25-4834-9690-f131f0e927d3" name="Changes" comment="version_04_finally with javaDoc">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/People.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/People.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +17,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -38,11 +39,13 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "full.screen.before.presentation.mode": "false",
     "last_opened_file_path": "C:/Users/георгий/IdeaProjects/javalab3",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)"
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.editor"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -54,7 +57,9 @@
       <option name="presentableId" value="Default" />
       <updated>1678756477124</updated>
       <workItem from="1678756478347" duration="23968000" />
-      <workItem from="1678874306322" duration="3844000" />
+      <workItem from="1678874306322" duration="5169000" />
+      <workItem from="1678965997911" duration="15000" />
+      <workItem from="1678967125541" duration="6398000" />
     </task>
     <task id="LOCAL-00001" summary="version_01">
       <created>1678782892929</created>
@@ -98,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678875901557</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="version_04_finally with javaDoc">
+      <created>1678878356801</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1678878356801</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,6 +132,7 @@
     <MESSAGE value="version_02" />
     <MESSAGE value="version_04_finally" />
     <MESSAGE value="version_03_finally" />
-    <option name="LAST_COMMIT_MESSAGE" value="version_03_finally" />
+    <MESSAGE value="version_04_finally with javaDoc" />
+    <option name="LAST_COMMIT_MESSAGE" value="version_04_finally with javaDoc" />
   </component>
 </project>

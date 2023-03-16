@@ -2,10 +2,11 @@ import java.io.IOException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
+import java.time.format.ResolverStyle;
 import java.time.temporal.ChronoUnit;
+import java.util.Locale;
 
-
-public class People {
+public class People{
     private String name;
     private String surname;
     private String patronymic;
@@ -26,6 +27,15 @@ public class People {
                 name = NSPAndBorn[1];
                 patronymic = NSPAndBorn[2];
                 born = NSPAndBorn[3];
+                DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern("dd.MM.uuuu", Locale.US).withResolverStyle(ResolverStyle.STRICT);
+                DateValidCheck validCheck = new DateValidCheck(dateFormatter);
+                try {
+                    if(!validCheck.isValid(born)){
+                        throw new IOException();
+                    }
+                }catch (IOException e){
+                    System.out.println("Date is not real");
+                }
             }
         }catch (IOException e){
             System.out.println("Incorrect format of the entered data");
@@ -57,6 +67,7 @@ public class People {
      */
     public int getAge() throws DateTimeParseException {
         try {
+
             LocalDate born = LocalDate.parse(getBornAge(), DateTimeFormatter.ofPattern("dd.MM.yyyy"));
             LocalDate today = LocalDate.now();
             return (int) ChronoUnit.YEARS.between(born, today);
@@ -110,6 +121,8 @@ public class People {
             return null;
         }
     }
+
+
 
 
 

@@ -1,0 +1,13 @@
+#----------------------------
+#GitHub Action JavaLab3 For DevOps Lab 2
+#
+#----------------------------
+name: DevOps_Lab2
+
+on: [push]
+
+jobs:
+  my_job:
+    runs-on:  ubuntu-latest 
+  
+  

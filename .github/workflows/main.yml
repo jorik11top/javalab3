@@ -11,19 +11,19 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
+    - name: Checkout repository
       uses: actions/checkout@v2
 
-    - name: Set up JDK 11
+    - name: Set up Java
       uses: actions/setup-java@v2
       with:
-        java-version: 11
-
-    - name: Build with Gradle
-      run: javac Main.java
-
-    - name: Run the program
-      run: java Main
+        java-version: '11'
+        
+    - name: Compile Java application
+      run: javac *.java
+      
+    - name: Run Java application
+      run: java Main "Чайкин Георгий Максимович 01.05.2023"
 
 
 

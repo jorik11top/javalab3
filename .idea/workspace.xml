@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5a7b032-6a25-4834-9690-f131f0e927d3" name="Changes" comment="version_04_finally with javaDoc">
+    <list default="true" id="f5a7b032-6a25-4834-9690-f131f0e927d3" name="Changes" comment="version_05_finally with check leap year">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/People.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/People.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +23,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -45,6 +45,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.editor"
   }
 }]]></component>
@@ -59,7 +60,13 @@
       <workItem from="1678756478347" duration="23968000" />
       <workItem from="1678874306322" duration="5169000" />
       <workItem from="1678965997911" duration="15000" />
-      <workItem from="1678967125541" duration="6398000" />
+      <workItem from="1678967125541" duration="6692000" />
+      <workItem from="1680803577070" duration="22000" />
+      <workItem from="1682519757503" duration="27000" />
+      <workItem from="1686871230982" duration="673000" />
+      <workItem from="1687898745195" duration="23000" />
+      <workItem from="1688026707245" duration="625000" />
+      <workItem from="1688056878153" duration="2111000" />
     </task>
     <task id="LOCAL-00001" summary="version_01">
       <created>1678782892929</created>
@@ -110,7 +117,21 @@
       <option name="project" value="LOCAL" />
       <updated>1678878356801</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="version_05_finally with check leap year">
+      <created>1678986600295</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1678986600295</updated>
+    </task>
+    <task id="LOCAL-00009" summary="version_05_finally with check leap year">
+      <created>1678986616679</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1678986616679</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,6 +154,7 @@
     <MESSAGE value="version_04_finally" />
     <MESSAGE value="version_03_finally" />
     <MESSAGE value="version_04_finally with javaDoc" />
-    <option name="LAST_COMMIT_MESSAGE" value="version_04_finally with javaDoc" />
+    <MESSAGE value="version_05_finally with check leap year" />
+    <option name="LAST_COMMIT_MESSAGE" value="version_05_finally with check leap year" />
   </component>
 </project>

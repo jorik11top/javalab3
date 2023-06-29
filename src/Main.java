@@ -23,7 +23,7 @@ public class Main {
 //        }
 
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Введите ФИО и дату рождения(дд.мм.гггг)");
+        System.out.print("Введите ФИО и дату рождения(дд.мм.гггг)");
         String name = scanner.nextLine();
         People user1 = new People(name);
         System.out.println(user1.getUserInfoFormat());

@@ -4,7 +4,7 @@
 #----------------------------
 name: DevOps_Lab2
 
-on: [push]
+on: [workflow_dispatch]
 
 jobs:
   build:

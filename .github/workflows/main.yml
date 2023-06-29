@@ -25,6 +25,25 @@ jobs:
       
     - name: Run Java application
       run: java -cp src Main "Чайкин Георгий Максимович 01.05.2023"
+  Docker:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Java
+      uses: actions/setup-java@v2
+      with:
+        java-version: '17'
+        distribution: 'adopt'
+        
+    - name: Compile Java application
+      run: javac src/ValidData.java src/DateValidCheck.java src/People.java src/Main.java
+      
+    - name: Run Java application
+      run: java -cp src Main "Чайкин Георгий Максимович 01.05.2023"
+      
 
 
 

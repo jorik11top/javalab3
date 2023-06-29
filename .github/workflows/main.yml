@@ -24,7 +24,7 @@ jobs:
       run: javac src/ValidData.java src/DateValidCheck.java src/People.java src/Main.java
       
     - name: Run Java application
-      run: java Main "Чайкин Георгий Максимович 01.05.2023"
+      run: java src/Main.java "Чайкин Георгий Максимович 01.05.2023"
 
 
 

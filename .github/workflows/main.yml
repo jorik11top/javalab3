@@ -21,7 +21,7 @@ jobs:
         distribution: 'adopt'
         
     - name: Compile Java application
-      run: javac *.java
+      run: javac src/*.java
       
     - name: Run Java application
       run: java Main "Чайкин Георгий Максимович 01.05.2023"

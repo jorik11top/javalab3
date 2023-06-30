@@ -45,7 +45,7 @@ jobs:
 
     - name: Build Docker image
       run: |
-        docker build -t my-pipeline-image .
+        docker build -t my-docker .
         
 
       

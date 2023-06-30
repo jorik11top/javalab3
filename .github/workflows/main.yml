@@ -7,8 +7,6 @@ name: DevOps_Lab2
 on: [workflow_dispatch]
 
 jobs:
-  Lint:
-    runs-on: ubuntu-latest
     
   Build:
     runs-on: ubuntu-latest
